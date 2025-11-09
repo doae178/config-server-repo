@@ -1,20 +1,5 @@
-# ===============================
-# H2 DATABASE CONFIG
-# ===============================
-spring.h2.console.enabled=true
-spring.datasource.url=jdbc:h2:mem:testdb
-spring.datasource.driverClassName=org.h2.Driver
-spring.datasource.username=sa
+server.port=8081
+spring.application.name=microservice-produits
+spring.datasource.url=jdbc:mysql://localhost:3306/produitsdb
+spring.datasource.username=root
 spring.datasource.password=
-
-# ===============================
-# JPA / HIBERNATE
-# ===============================
-spring.jpa.show-sql=true
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.H2Dialect
-
-# ===============================
-# CONFIG PERSONNALISÉE
-# ===============================
-mes-configs.limitDeProduits=3
